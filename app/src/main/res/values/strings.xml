@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QuizBuilderV3</string>
+    <string name="btnStartQuiz">Start</string>
+    <string name="btnChoice1">Choice1</string>
+    <string name="btnChoice2">Choice2</string>
+    <string name="btnChoice3">Choice3</string>
+    <string name="btnChoice4">Choice4</string>
+    <string name="btnNext">Next</string>
+    <string name="btnRestart">Restart</string>
+    <string name="textViewName">Name</string>
+    <string name="textViewWelcome">Welcome to the Quizz</string>
+    <string name="textViewCounts">1 / 1</string>
+    <string name="textViewQuestion">Question 1?</string>
+    <string name="textViewResult">Result</string>
+</resources>
