@@ -39,6 +39,7 @@ public class ActivityQuiz extends AppCompatActivity implements View.OnClickListe
     int currentQuestionIndex = 0;
     String selectedAnswer = "";
     String question = "";
+    String s = "";
 
     //OnCreate
     @Override
@@ -68,7 +69,7 @@ public class ActivityQuiz extends AppCompatActivity implements View.OnClickListe
         Bundle extras = getIntent().getExtras();
         if (extras != null)
         {
-            String s = extras.getString("Key");
+            s = extras.getString("Name");
 //            textViewResult.setText(s);
         }
 
@@ -254,7 +255,7 @@ public class ActivityQuiz extends AppCompatActivity implements View.OnClickListe
 
         new AlertDialog.Builder(this)
                 .setTitle(passStatus)
-                .setMessage("Score is "+ score+" out of "+ totalQuestions)
+                .setMessage(s + " Score is "+ score+" / "+ totalQuestions)
                 .setPositiveButton("Restart",(dialogInterface, i) -> restartQuiz() )
                 .setCancelable(false)
                 .show();
@@ -267,13 +268,13 @@ public class ActivityQuiz extends AppCompatActivity implements View.OnClickListe
         //    score = 0;
         currentQuestionIndex =0;
 //        loadNewQuestion(); // Change to send to first view
-        //Intent to Main Activity
-        Intent i = new Intent(ActivityQuiz.this, ActivityResults.class);
-        Bundle extras = new Bundle();
-        //extras.putString("Name", "Gabriel");//"Key", "Information to send, like variables"
-        extras.putInt("Score", score);
-        i.putExtras(extras);
-        startActivity(i,extras);
+//        //Intent to Main Activity
+//        Intent i = new Intent(ActivityQuiz.this, ActivityResults.class);
+//        Bundle extras = new Bundle();
+//        //extras.putString("Name", "Gabriel");//"Key", "Information to send, like variables"
+//        extras.putInt("Score", score);
+//        i.putExtras(extras);
+//        startActivity(i,extras);
     } // END Restart Quiz
 
     //Function to get a random number

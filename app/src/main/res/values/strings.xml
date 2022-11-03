@@ -12,4 +12,6 @@
     <string name="textViewCounts">1 / 1</string>
     <string name="textViewQuestion">Question 1?</string>
     <string name="textViewResult">Result</string>
+    <string name="editGetName"></string>
+
 </resources>
